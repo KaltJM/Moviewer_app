@@ -1,3 +1,4 @@
+/*Módulo de configuración de DB (PostgreSQL)*/
 const Pool = require('pg').Pool;
 
 const pool = new Pool({
