@@ -12,4 +12,5 @@ app.use('', router); //Router estándar para operaciones normales
 app.use((req, res) => res.status(404).send('ERROR 404: Dirección no localizada')); //Cualquier otra ruta
 
 app.listen(port);
-console.log(`pilas en el ${port}`);
+console.log(`Escuchando en el puerto: ${port}`);
+

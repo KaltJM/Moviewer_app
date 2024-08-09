@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router(); //Permite el uso de métodos HTTP
 const controller = require('./controller.js'); //Para realizar operaciones de conexión a la DB
 
 /* Módulo de Rutas establecidas para el funcionamiento de la aplicación */

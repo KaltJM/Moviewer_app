@@ -22,13 +22,15 @@ function getMovies (req,res) {
                     }
                 }
             }
-            res.send(movies) //Envío al cliente de las películas del género consultado
+            
+            return res.send(movies) //Envío al cliente de las películas del género consultado
         }
         else{ //Búsqueda general
-            res.send(results.rows)
+            return res.send(results.rows)
         }
     });
 }
+
 /*Función que crea una película en la DB*/
 function insertMovie (req,res) {
     const {nombre, costo_de_creacion, genero, fecha_de_lanzamiento} = req.body; //Guardado de elementos del JSON enviado por el cliente
@@ -78,6 +80,7 @@ function updateMovie (req,res) {
         }
     });
 }
+
 /*Función utilizada al iniciar métodos HTTP para verificar que la película a consultar existe (de ser necesario)*/
 function checkMovieExists (req,res) {
     switch(req.method){ //Dependiendo de operación a realizar
@@ -131,4 +134,4 @@ function checkMovieExists (req,res) {
     }
 }
 
-module.exports = {getMovies, checkMovieExists};
+module.exports = {getMovies, checkMovieExists, insertMovie, updateMovie, deleteMovie};
