@@ -56,7 +56,7 @@ https://github.com/KaltJM/Moviewer_app/tree/main<br><br>
 - documentación, pruebas, etc<br>
 
 ## Authors
-Ing. Jonathan Matheus<br>
+Jonathan Matheus<br>
 
 
 ## Acknowledgments
