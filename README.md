@@ -36,7 +36,13 @@ https://github.com/KaltJM/Moviewer_app/tree/main<br><br>
   - GET /movies?genre=*géneroPorBuscar*<br>
     Retorna desde la base de datos en formato JSON todas las películas<br>que pertenezcan al género establecido como parámetro.<br><br>
   - POST /movies<br>
-    Crea una nueva película con la información en formato JSON por medio de las keys ("nombre", "fecha_de_lanzamiento", "costo_de_creacion", "genero")<br><br>
+    Crea una nueva película con la información en formato JSON por medio de las keys:<br>
+      {
+    "nombre": "string",
+    "fecha_de_lanzamiento": "yyyy-mm-dd",
+    "costo_de_creacion":"number",
+    "genero":"string"
+}<br><br>
   - PUT /movies/:*id*<br>
     Actualiza una película existente en la base de datos por medio de su respectiva id,<br>se registra la información provista en un formato JSON
     por medio de las keys ("nombre", "fecha_de_lanzamiento", "costo_de_creacion", "genero").<br><br>

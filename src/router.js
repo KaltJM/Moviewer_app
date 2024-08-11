@@ -5,8 +5,7 @@ const controller = require('./controller.js'); //Para realizar operaciones de co
 
 router.get('/movies', controller.getMovies); //Para este método se realiza búsqueda general y específica (género)
 router.post('/movies', controller.checkMovieExists);
-router.delete('/movies/:id',controller.checkMovieExists);
-router.put('/movies/:id',controller.checkMovieExists);
-
+router.delete('/movies/:id', controller.checkMovieExists);
+router.put('/movies/:id', controller.checkMovieExists);
 
 module.exports = router;
