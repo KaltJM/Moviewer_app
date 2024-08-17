@@ -24,12 +24,11 @@ function getMovies(req, res) {
 					}
 				}
 			}
-            if(movies.length == 0){
-			    return res.status(400).send('no movies found in this genre');
-            }
-            else{
-			    return res.status(200).send(movies); //Envío al cliente de las películas del género consultado
-            }
+			if (movies.length == 0) {
+				return res.status(400).send('no movies found in this genre');
+			} else {
+				return res.status(200).send(movies); //Envío al cliente de las películas del género consultado
+			}
 		} else {
 			//Búsqueda general
 			return res.status(200).send(results.rows);
